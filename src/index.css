@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+Img:hover {
+  transform: scale(1.2);
+  transition: all .3s ease-in-out; 
+}

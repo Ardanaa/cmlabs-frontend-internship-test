@@ -1,6 +1,7 @@
 import { Container, Button, Row, Col, Card } from "react-bootstrap";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function HomeProduct() {
 	const [foodCategory, setFoodCategory] = useState([]);
@@ -19,22 +20,22 @@ function HomeProduct() {
 
   return (
     <>
-    <Container id="products" className="mt-5">
-				<Row >
+    <Container id="products" className="mt-5 w-50" >
+				<Row>
 					{foodCategory.map((foodCategory) =>
-						<Col key={foodCategory.id} className="col-3 mb-3 p-2" >
-							{/* <Link className="text-decoration-none text-black" to={`/produk/${foodCategory.id}`}> */}
-								<Card >
-									<Card.Img variant="top" className="border-none" src={`${foodCategory.strCategoryThumb}`} style={{objectFit: "cover" }} />
+						<Col key={foodCategory.id} className="col-4 mb-3 p-2 border-none" >
+							<Link className="text-decoration-none text-black" to={`/category/${foodCategory.strCategory}`}>
+								<Card>
+									<Card.Img variant="top" className="border-none" src={`${foodCategory.strCategoryThumb}`} style={{maxHeight: "120px", objectFit: "cover" }} />
 									{/* <Card.Body>
 										<Card.Title className="fs-7 ">{foodCategory.name}</Card.Title>
 										<p className="text-black-50 fs-8  mb-0">{foodCategory.category}</p>
 										<Card.Text className="fs-7 ">{foodCategory.price}</Card.Text>
 									</Card.Body> */}
 								</Card>
-							{/* </Link> */}
+							</Link>
 						</Col>
-					).reverse()}
+					)}
 				</Row>
 			</Container>
     </>

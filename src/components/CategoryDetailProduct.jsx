@@ -23,7 +23,7 @@ function CategoryDetailProduct() {
 
   return (
     <>
-    <Container id="category-detail" className="mt-5 w-50" >
+    <Container id="category-detail" className="mt-5 w-md-50" >
 			<div>
 				<AiFillHome className="mb-1 me-2"></AiFillHome>
 				Home
@@ -38,10 +38,10 @@ function CategoryDetailProduct() {
 			</h1>
 				<Row>
 					{foodDetail.map((foodDetail) =>
-						<Col key={foodDetail.idMeal} className="col-3 mb-3 p-2" >
-							<Link className="text-decoration-none text-black" to={`/produk/${foodDetail.id}`}>
-								<Card className="border-0 meals" style={{height: '120px', overflow: 'hidden', borderRadius: '20px'}}>
-									<Card.Img className="img-hover-zoom--quick-zoom" src={`${foodDetail.strMealThumb}`} style={{maxHeight: "120px", objectFit: "cover"}} />
+						<Col key={foodDetail.idMeal} className="col-6 col-md-3 mb-3 p-2" >
+							<Link className="text-decoration-none text-black" to={`/meal/${foodDetail.idMeal}`}>
+								<Card className="border-0 meals" style={{ overflow: 'hidden', borderRadius: '20px'}}>
+									<Card.Img className="img-hover-zoom--quick-zoom" src={`${foodDetail.strMealThumb}`} style={{ objectFit: "cover"}} />
 									<div className="text-overlay text-center">
 										{`${foodDetail.strMeal}`}
 									</div>

@@ -13,7 +13,7 @@ function Home() {
 
       <Container>
         <div className="text-center">
-          <div style={{color: 'orange'}} >
+          <div style={{ color: 'orange' }} >
             <GiHotMeal></GiHotMeal>
             <GiBowlOfRice className="mx-3"></GiBowlOfRice>
             <FaCookieBite></FaCookieBite>

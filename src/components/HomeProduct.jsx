@@ -24,11 +24,11 @@ function HomeProduct() {
     <Container id="products" className="mt-5 w-50" >
 				<Row>
 					{foodCategory.map((foodCategory) =>
-						<Col key={foodCategory.id} className="col-4 mb-3 p-2" >
+						<Col key={foodCategory.id} className="col-3 mb-3 p-2" >
 							<Link className="text-decoration-none text-black" to={`/category/${foodCategory.strCategory}`}>
-								<Card className="border-0 category-food">
+								<Card className="border-0 food-category">
 									<Card.Img variant="top" className="img-hover-zoom--blur" src={`${foodCategory.strCategoryThumb}`} style={{maxHeight: "120px", objectFit: "cover" }} />
-									<div className="category-overlay">
+									<div className="text-overlay">
 										{`${foodCategory.strCategory}`}
 									</div>
 								</Card>

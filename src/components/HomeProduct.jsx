@@ -26,13 +26,11 @@ function HomeProduct() {
 					{foodCategory.map((foodCategory) =>
 						<Col key={foodCategory.id} className="col-4 mb-3 p-2" >
 							<Link className="text-decoration-none text-black" to={`/category/${foodCategory.strCategory}`}>
-								<Card className="border-0">
+								<Card className="border-0 category-food">
 									<Card.Img variant="top" className="img-hover-zoom--blur" src={`${foodCategory.strCategoryThumb}`} style={{maxHeight: "120px", objectFit: "cover" }} />
-									{/* <Card.Body>
-										<Card.Title className="fs-7 ">{foodCategory.name}</Card.Title>
-										<p className="text-black-50 fs-8  mb-0">{foodCategory.category}</p>
-										<Card.Text className="fs-7 ">{foodCategory.price}</Card.Text>
-									</Card.Body> */}
+									<div className="category-overlay">
+										{`${foodCategory.strCategory}`}
+									</div>
 								</Card>
 							</Link>
 						</Col>

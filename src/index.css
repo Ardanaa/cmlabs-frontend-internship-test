@@ -12,7 +12,15 @@ code {
     monospace;
 }
 
-Img:hover {
+/* Blur-zoom Container */
+.img-hover-zoom--blur {
+  transition: transform 1s, filter 1.5s ease-in-out;
+  filter: blur(2px);
+  /* transform: scale(1.2); */
+}
+
+/* The Transformation */
+.img-hover-zoom--blur:hover {
+  filter: blur(0);
   transform: scale(1.2);
-  transition: all .3s ease-in-out; 
 }

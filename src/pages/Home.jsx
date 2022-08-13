@@ -1,25 +1,23 @@
 import React from "react";
-import { Container, Nav, Navbar } from 'react-bootstrap';
-import {GiHotMeal} from 'react-icons'
+import { Container } from 'react-bootstrap';
+import { GiHotMeal, GiBowlOfRice } from 'react-icons/gi';
+import { FaCookieBite } from 'react-icons/fa';
 import HomeProduct from '../components/HomeProduct';
+import Navbar from '../components/Navbar';
 
 function Home() {
   return (
     <>
-      <Navbar bg="light" variant="light">
-        <Container>
-          <Navbar.Brand href="#home" className="fw-bold">mealapp</Navbar.Brand>
-          <Nav className="ms-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Food</Nav.Link>
-            <Nav.Link href="#pricing">Ingredients</Nav.Link>
-            <Nav.Link href="#pricing">Local Culinary</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
+      {/* Navbar */}
+      <Navbar></Navbar>
 
       <Container>
         <div className="text-center">
+          <div style={{color: 'orange'}} >
+            <GiHotMeal></GiHotMeal>
+            <GiBowlOfRice className="mx-3"></GiBowlOfRice>
+            <FaCookieBite></FaCookieBite>
+          </div>
           <p>Mealapp API Website</p>
           <p className="fs-1 fw-bold">See All The Delicious Food</p>
         </div>
@@ -27,7 +25,7 @@ function Home() {
 
       {/* Home Product */}
       <HomeProduct></HomeProduct>
-      
+
     </>
   );
 }

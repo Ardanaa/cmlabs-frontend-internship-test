@@ -62,14 +62,14 @@ code {
   ;
 }
 
-@media  only screen and (max-width: 376px) {
+@media  only screen and (max-width: 400px) {
 
   #category-detail, #meal-detail, #home-food {
     width: 100% !important;
   }
 
-  iframe {
+  /* iframe {
     width: 360px;
     height: 250px;
-  }
+  } */
 }

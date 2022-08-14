@@ -1,7 +1,7 @@
-import { Container, Button, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { AiFillHome } from "react-icons/ai"
 import { FiChevronRight } from "react-icons/fi"
 
@@ -26,17 +26,17 @@ function MealDetailProduct() {
       <Container id="meal-detail" className="mt-1 w-50" >
         <div>
           <AiFillHome className="mb-1 me-2"></AiFillHome>
-          Home
+          <a href="/">Home</a>
           <FiChevronRight></FiChevronRight>
-          Foods
+          <a href="/">Foods</a>
           <FiChevronRight></FiChevronRight>
-          {`${mealDetail.strCategory}`}
+          <a href={`/category/${mealDetail.strCategory}`}>{`${mealDetail.strCategory}`}</a>
           <FiChevronRight></FiChevronRight>
           <span className="text-black-50">{`${mealDetail.strMeal}`}</span>
         </div>
 
         <h1 className="mt-5 text-center">{`${mealDetail.strMeal}`}</h1>
-        <p className="mb-4 text-center" style={{ color: 'orange' }}>{`${mealDetail.strArea}`} Cullinary</p>
+        <p className="mb-4 text-center" style={{ color: "orange" }}>{`${mealDetail.strArea}`} Cullinary</p>
 
         <div className="d-flex justify-content-center">
           <img
@@ -85,7 +85,7 @@ function MealDetailProduct() {
 
         <p className={mealDetail.strYoutube === "" ? "d-none" : "fs-1 text-center"}>Tutorial</p>
         <div className="text-center">
-        <iframe className="mx-auto w-100" src={mealDetail.strYoutube} title="Tutorial" loading="lazy" allowfullscreen></iframe>
+        <iframe className="mx-auto w-100" height="300px" src={mealDetail.strYoutube} title="Tutorial" loading="lazy" allowfullscreen></iframe>
         </div>
       </Container>
     </>

@@ -1,8 +1,8 @@
-import { Container, Button, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import '../index.css';
+import "../index.css";
 
 function HomeProduct() {
 	const [foodCategory, setFoodCategory] = useState([]);

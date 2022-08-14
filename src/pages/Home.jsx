@@ -1,9 +1,9 @@
 import React from "react";
-import { Container } from 'react-bootstrap';
-import { GiHotMeal, GiBowlOfRice } from 'react-icons/gi';
-import { FaCookieBite } from 'react-icons/fa';
-import HomeProduct from '../components/HomeProduct';
-import Navbar from '../components/Navbar';
+import { Container } from "react-bootstrap";
+import { GiHotMeal, GiBowlOfRice } from "react-icons/gi";
+import { FaCookieBite } from "react-icons/fa";
+import HomeProduct from "../components/HomeProduct";
+import Navbar from "../components/Navbar";
 
 function Home() {
   return (
@@ -13,7 +13,7 @@ function Home() {
 
       <Container>
         <div className="text-center">
-          <div style={{ color: 'orange' }} >
+          <div style={{ color: "orange" }} >
             <GiHotMeal></GiHotMeal>
             <GiBowlOfRice className="mx-3"></GiBowlOfRice>
             <FaCookieBite></FaCookieBite>

@@ -1,6 +1,6 @@
 import React from "react";
-import CategoryDetailProduct from '../components/CategoryDetailProduct';
-import Navbar from '../components/Navbar'
+import CategoryDetailProduct from "../components/CategoryDetailProduct";
+import Navbar from "../components/Navbar"
 
 
 function CategoryDetail() {

@@ -1,6 +1,6 @@
 import React from "react";
-import MealDetailProduct from '../components/MealDetailProduct';
-import Navbar from '../components/Navbar'
+import MealDetailProduct from "../components/MealDetailProduct";
+import Navbar from "../components/Navbar"
 
 
 function MealDetail() {

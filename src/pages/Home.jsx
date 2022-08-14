@@ -4,12 +4,15 @@ import { GiHotMeal, GiBowlOfRice } from "react-icons/gi";
 import { FaCookieBite } from "react-icons/fa";
 import HomeProduct from "../components/HomeProduct";
 import Navbar from "../components/Navbar";
+import GreetModal from "../components/GreetModal";
 
 function Home() {
   return (
     <>
       {/* Navbar */}
       <Navbar></Navbar>
+
+      <GreetModal></GreetModal>
 
       <Container>
         <div className="text-center">

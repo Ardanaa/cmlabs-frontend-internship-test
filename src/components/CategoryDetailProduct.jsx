@@ -23,7 +23,7 @@ function CategoryDetailProduct() {
 
 	return (
 		<>
-			<Container id="category-detail" className="mt-5 w-md-50" >
+			<Container id="category-detail" className="mt-5 w-50" >
 				<div>
 					<AiFillHome className="mb-1 me-2"></AiFillHome>
 					<a href="/">Home</a>

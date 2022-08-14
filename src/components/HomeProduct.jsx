@@ -21,7 +21,7 @@ function HomeProduct() {
 
   return (
     <>
-    <Container id="home-food" className="mt-5 w-md-50" >
+    <Container id="home-food" className="mt-5 w-50" >
 				<Row>
 					{foodCategory.map((foodCategory) =>
 						<Col key={foodCategory.id} className="col-6 col-md-3 mb-3 p-2" >

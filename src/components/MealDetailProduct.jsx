@@ -79,13 +79,15 @@ function MealDetailProduct() {
 
         <div className="my-5">
           <p className="fs-1 text-center">Instructions</p>
-          <p className="text-justify" style={{textAlign: "justify",
-  textJustify: "interWord"}}>{`${mealDetail.strInstructions}`}</p>
+          <p className="text-justify" style={{
+            textAlign: "justify",
+            textJustify: "interWord"
+          }}>{`${mealDetail.strInstructions}`}</p>
         </div>
 
         <p className={mealDetail.strYoutube === "" ? "d-none" : "fs-1 text-center"}>Tutorial</p>
         <div className="text-center">
-        <iframe className="mx-auto w-100" height="300px" src={mealDetail.strYoutube} title="Tutorial" loading="lazy" allowfullscreen></iframe>
+          <iframe className="mx-auto w-100" height="300px" src={mealDetail.strYoutube} title="Tutorial"></iframe>
         </div>
       </Container>
     </>

@@ -25,10 +25,9 @@ function GreetModal() {
           <p>Muhammad Ardana</p>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
+          <Button variant="primary" onClick={handleClose}>
+            Okay
           </Button>
-          <Button variant="primary">Understood</Button>
         </Modal.Footer>
       </Modal>
   )
